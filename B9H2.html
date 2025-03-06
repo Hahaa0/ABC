@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#button1").click(function(){
+    $("#div3").show(2000);
+    $("#div1").hide(2000);
+  });
+  $("#button2").click(function(){
+    $("#div1").show(2000);
+    $("#div3").hide(2000);
+  });
+
+});
+</script> 
+</head>
+<body>
+<center>
+  <p align="center">B9H2</p><br>
+  <button id="button1">Start 1</button>
+  <button id="button2">Start 2</button>  
+  <table border="1" width="435" style="margin-top:100px; margin-left:20px;">
+  <tr width="430">
+  <td height="250">
+    <div id="div3" style="display: none;"> 
+      <p align="center">How to Tie Your Shoes</p>
+    <iframe src="https://www.youtube.com/embed/q44kByZmKDs" frameborder="0" allowfullscreen width="426" height="240"></iframe>
+  </div>
+  </td>
+  </tr>
+  </table>
+
+  <table border="1" width="435" style="margin-top:100px; margin-left:20px;">
+  <tr width="430">
+  <td height="250">
+    <div id="div1" style="display: none;"> 
+      <p align="center">How to Ware Tie</p>
+    <iframe src="https://www.youtube.com/embed/HXJx8j7JpKY" frameborder="0" allowfullscreen width="426" height="240"></iframe>
+  </div>
+  </td>
+  </tr>
+  </table>
+
+</center>
+</body>
+</html>
