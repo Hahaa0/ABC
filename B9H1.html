@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#but1").click(function(){
+    $("#div1").delay(2000).fadeIn();
+    $("#div2").delay(50).fadeOut();    
+    $("#div3").delay(50).fadeOut();
+  });
+  $("#but2").click(function(){
+    $("#div2").delay(2000).fadeIn();
+    $("#div1").delay(50).fadeOut();    
+    $("#div3").delay(50).fadeOut();
+  });
+  $("#but3").click(function(){
+    $("#div3").delay(2000).fadeIn();
+    $("#div2").delay(50).fadeOut();    
+    $("#div1").delay(50).fadeOut();
+  });
+
+
+});
+</script>
+</head>
+<body>
+<center>
+    <p>Top 3 University in China mainland.</p>
+    <button id="but1">Peking University</button>
+    <button id="but2">Tsinghua University</button>
+    <button id="but3">Fudan University</button>
+    <br><br>
+    
+    <div id="div1" style="display: none;">
+        <p>Peking University</p>
+    <iframe src="https://www.youtube.com/embed/cb3Zx7xWqeQ" frameborder="0" allowfullscreen width="672" height="378"></iframe>
+    </div>
+    <div id="div2" style="display: none;">
+        <p>Tsinghua University</p>
+    <iframe src="https://www.youtube.com/embed/-VpnShTLLk8" frameborder="0" allowfullscreen width="672" height="378"></iframe>
+    </p>
+    </div>
+    <div id="div3" style="display: none;">
+        <p>Fudan University</p>
+    <iframe src="https://www.youtube.com/embed/HGfPEUMgnek" frameborder="0" allowfullscreen width="672" height="378"></iframe>
+    </p>
+    </div>
+</center>
+
+</body>
+</html>
